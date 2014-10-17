@@ -1,0 +1,36 @@
+.intro-wrap {
+    background: url('../img/intro-background') center top;
+    background-size: cover;
+}
+
+.intro {
+    padding: 80px 0 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    h1 {
+        margin-bottom: @grid-gutter-width;
+
+        &, small {
+            color: #fff;
+            font-size: 28px;
+            font-weight: 300;
+        }
+
+        small {
+            display: block;
+        }
+    }
+
+    .intro-panel {
+        margin-top: 60px;
+        perspective: 250px;
+
+        img {
+            transform: rotateX(15deg);
+            width: 75%;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+        }
+    }
+}

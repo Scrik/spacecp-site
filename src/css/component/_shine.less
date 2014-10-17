@@ -1,0 +1,19 @@
+.shine-links {
+
+    &:extend(.inline-list all);
+
+    a {
+        padding: 0 (@grid-gutter-width / 2);
+        color: #7c7e84;
+    }
+
+    li.divider {
+        border-left: 1px solid #30333c;
+        border-right: 1px solid #21222b;
+    }
+
+    a:hover, li.active a {
+        color: @brand-primary;
+        text-decoration: none;
+    }
+}

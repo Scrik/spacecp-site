@@ -1,0 +1,28 @@
+@rocket-width: 50px;
+
+.navbar.navbar-default {
+    border-left: 0;
+    border-right: 0;
+
+    .navbar-brand {
+        min-width: @rocket-width;
+        background: url('../img/rocket.png') left center no-repeat;
+        text-indent: 40px;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 300;
+
+        &:hover {
+            color: @brand-primary;
+        }
+    }
+
+    .navbar-nav > li > a {
+        font-weight: bold;
+    }
+
+    .navbar-right {
+        margin-right: -@grid-gutter-width;
+        margin-left: @grid-gutter-width / 2;
+    }
+}
