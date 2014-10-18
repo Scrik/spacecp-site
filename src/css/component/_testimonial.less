@@ -1,0 +1,30 @@
+@testimonial-avatar-radius: 16px;
+
+.testimonial {
+    border: none;
+    padding: 15px;
+    background: #fff;
+    font-size: 12px;
+    position: relative;
+
+    .author {
+        color: #aaa;
+
+        &:before {
+            content: "\2014";
+        }
+    }
+
+    .avatar {
+        position: absolute;
+        // I tried to math this to align perfectly to the corner,
+        // but it didn't work in CSS... If anyone knows the solution
+        // PR. This is what I got: http://i.imgur.com/yv5e6I7.jpg
+        right: -4.5px;
+        bottom: -4.5px;
+
+        width: @testimonial-avatar-radius * 2;
+        height: @testimonial-avatar-radius * 2;
+        border-radius: 50%;
+    }
+}

@@ -1,0 +1,51 @@
+.social-form {
+    label {
+        display: block;
+        text-align: center;
+        margin-bottom: @grid-gutter-width;
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .btn {
+        background: #fff;
+        border: 1px solid #fff;
+        color: #000;
+        padding-bottom: 11px;
+
+        &:hover {
+            background: @brand-primary;
+            color: #fff;
+        }
+    }
+
+    .form-control {
+        background: @brand-primary;
+        border: 1px solid #fff;
+        box-shadow: none;
+        color: #fff;
+
+        &:focus {
+            background: #fff;
+            color: #000;
+        }
+    }
+}
+
+.social-links {
+    text-align: center;
+    margin-top: @grid-gutter-width !important;
+
+    &:extend(.inline-list all);
+
+    a {
+        color: #fff;
+        padding: 10px 15px;
+
+        &:hover {
+            color: #000;
+            background: #fff;
+            text-decoration: none;
+        }
+    }
+}
